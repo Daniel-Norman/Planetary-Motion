@@ -4,17 +4,21 @@ from body import *
 import random
 import math
 
+# Helper function to draw a circle for a given body
 def draw_body(screen, body):
     gfxdraw.filled_circle(screen, int(body.x), int(body.y), body.r, body.color)
 
 
+# Helper function to redraw the screen
 def draw_screen(screen, body_list):
+    # First we must repaint the background, and then add the bodies in the foreground
     screen.fill((0, 0, 40))
     for body in body_list:
         draw_body(screen, body)
-    pygame.display.flip()
+    pygame.display.flip() # Used by pygame to refresh the screen
 
-
+# Initialize the empty body_list to contain Body objects with
+# attributes set correctly
 def initialize_body_list(body_list):
     sun = Body(x=500, y=500, r=50, mass=3000, color=(200, 200, 0))
     sun.vx = 0
