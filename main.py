@@ -114,7 +114,7 @@ def update_position(body, dt):
     dy = body.vy * dt
     body.y = body.y + dy
 
-    # Uncomment to have bodies wrap
+    # Comment the following lines to stop bodies from wrapping around the screen boundaries:
 
     if body.x < body.r * -2:
         body.x = 1000 + body.r * 2
