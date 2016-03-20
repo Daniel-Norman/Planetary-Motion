@@ -1,5 +1,6 @@
 # Planetary-Motion
-Simple 2D planetary motion simulator, created alongside Ana Verduzco initially as a Python tutorial.
+Simple 2D planetary motion simulator created initially as a Python tutorial.
+
 This program is heavily commented to provide a detailed explainiation of the purpose of each line of code.
 This particular simulator uses the Euler method of approximating solutions to the ODEs for the motion of the planetary bodies.
 
